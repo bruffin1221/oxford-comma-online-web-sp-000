@@ -8,7 +8,6 @@ def oxford_comma(array)
     puts array.insert(1,", ")
     return array.join("")
   elsif array.length>=3
-    puts array.insert(-2, "and")
-    return array.join(", ")
+    return array.join(", ")<<"#{array,inspect(-1, and)}"
   end
 end
